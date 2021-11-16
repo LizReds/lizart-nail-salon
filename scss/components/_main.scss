@@ -15,7 +15,7 @@ main {
                 font-size: 14px;
             }
         }
-        p {
+        p .precio{
             @media screen and (max-width:480px){
                 color: $visited-color;
                 font-size: 10px;

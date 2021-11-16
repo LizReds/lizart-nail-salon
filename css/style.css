@@ -112,13 +112,13 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
-  main section p {
+  main section p .precio {
     color: #9f1e7e;
     font-size: 10px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 960px) {
-  main section p {
+  main section p .precio {
     color: #08999e;
     font-size: 13px;
   }
