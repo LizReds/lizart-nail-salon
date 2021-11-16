@@ -1,0 +1,151 @@
+@import "../base/mixins";
+@import "../base/extends";
+
+main {
+    margin-left: 1%;
+    margin-right: 1%;
+    section {
+        h2 {
+            @media screen and (max-width:480px){
+                color: rgb(8, 153, 158);
+                font-size: 12px;
+            }
+            @media screen and (min-width:481px) and (max-width:960px){
+                color: $visited-color;
+                font-size: 14px;
+            }
+        }
+        p {
+            @media screen and (max-width:480px){
+                color: $visited-color;
+                font-size: 10px;
+            }
+            @media screen and (min-width:481px) and (max-width:960px){
+                color: rgb(8, 153, 158);
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+h1, h2 {
+    margin-top: 2%;
+    @include font-style ($main-purple, $poppins, 1.5rem, 400, none, none);
+}
+
+p {
+    @include font-style ($lighter-purple, $poppins, none, 400, none, none);
+}
+
+button {
+    background-color: $lighter-purple;
+    color: $lighter-teal;
+}
+
+// index main 
+.reviews-container {
+    display: grid;
+    grid-template-rows: 230px;
+    grid-template-columns: 50px 180px 180px 180px 50px;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.review-text {
+    font-size: 12px;
+    font-style: italic;
+}
+
+// servicios main
+
+.accordion-button{
+    @include font-style ($main-purple, $poppins, 1.5rem, 400, none, none);
+}
+
+.accordion-button, .accordion-body {
+    background-color: #c5a5f1;
+}
+
+.accordion-item, .accordion {
+    background-color: $main-purple;
+    border-radius: 5%;
+}
+
+.accordion {
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 5%;
+}
+
+// productos main
+
+.titulo-pagina {
+    margin-bottom: 2.5%;
+    @include font-style ($main-teal, $poppins, 1.5rem, 400, none, center);
+}
+
+col {
+    p {
+        img {
+            padding: 3%;
+        }
+    }
+}
+
+.titulo-pagina {
+    &:hover{
+        transition: all 2s;
+        transform: translateY(-20px);
+        animation: color-change 1s;
+    }
+}
+
+@keyframes color-change {
+    15% {
+        color: $lighter-purple;
+    }
+    15% {
+        font-style: italic;
+    }
+    60% {
+        color: #c5a5f1;
+    }
+}
+
+.productos {
+    @include font-style ($main-teal, $poppins, 1.5rem, 300, none, none);
+}
+
+.precio {
+    @include font-style ($lighter-purple, $poppins, 1rem, 400, italic, none);
+}
+
+// Sedes main
+
+.mapas {
+    margin: 0 auto;
+    border: 2px solid $main-teal;
+    @extend%flex-center;
+}
+
+.sedes {
+    @include font-style ($lighter-purple, $poppins, 1.5rem, 300, none, none);
+    @extend%flex-center;
+}
+
+// galeria main 
+
+.gallery-img {
+    display: grid;
+    grid-template-rows: 220px 220px;
+    grid-template-columns: 220px 220px 220px 220px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.grid-item {
+    border-radius: 50%;
+    &:hover{
+        transform: scale(1.5);
+        transition: all 1.5s;
+    }
+}

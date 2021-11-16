@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
+
+// body
+body {
+    background-image: url(../src/assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    @media screen and (max-width:480px){
+        background-color: thistle;
+        background-image: none;
+    }
+    @media screen and (min-width:481px) and (max-width:960px){
+        background-color: rgb(132, 165, 204);
+        background-image: none;
+    }
+}
+
+// variables
+@import"base/variables";
+
+//mixins
+@import"base/mixins";
+
+//extends
+@import"base/extends";
+
+// header
+@import"components/header";
+
+// main
+@import"components/main";
+
+// footer 
+@import"components/footer"
+
+

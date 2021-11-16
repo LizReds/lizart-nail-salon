@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300&display=swap");
+body {
+  background-image: url(../src/assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: thistle;
+    background-image: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  body {
+    background-color: #84a5cc;
+    background-image: none;
+  }
+}
+
+.sedes, .mapas, .menu {
+  display: flex;
+  justify-content: center;
+}
+
+.header-section {
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: grid;
+  grid-template-rows: 80px;
+  grid-template-columns: 70px 300px;
+  justify-content: center;
+}
+
+.logo:hover {
+  transform: rotateY(360deg) scale(1.2);
+  transition: all 2s ease-out;
+  -webkit-transform: rotateY(360deg) scale(1.2);
+  -o-transform: rotateY(360deg) scale(1.2);
+  -moz-transform: rotateY(360deg) scale(1.2);
+}
+
+.nombre-empresa {
+  color: #4B3869;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: none;
+  text-align: center;
+}
+
+.header-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+.header-icon a {
+  color: #4B3869;
+  text-decoration: none;
+  margin: 0.5em;
+}
+
+@media screen and (max-width: 480px) {
+  .menu ul {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .menu ul {
+    display: block;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 2%;
+}
+
+li a {
+  text-decoration: none;
+  color: #664E88;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: none;
+  font-style: none;
+  text-align: none;
+}
+li a:hover {
+  color: #baa7be;
+  background-color: #329499;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5%;
+}
+li a:active {
+  background-color: #4B3869;
+}
+li a:visited {
+  color: #9f1e7e;
+}
+
+.carousel {
+  margin: 0 auto;
+}
+
+.sedes, .mapas, .menu {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+@media screen and (max-width: 480px) {
+  main section h2 {
+    color: #08999e;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  main section h2 {
+    color: #9f1e7e;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main section p {
+    color: #9f1e7e;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  main section p {
+    color: #08999e;
+    font-size: 13px;
+  }
+}
+
+h1, h2 {
+  margin-top: 2%;
+  color: #4B3869;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: none;
+  text-align: none;
+}
+
+p {
+  color: #664E88;
+  font-family: "Poppins", sans-serif;
+  font-size: none;
+  font-weight: 400;
+  font-style: none;
+  text-align: none;
+}
+
+button {
+  background-color: #664E88;
+  color: #329499;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-rows: 230px;
+  grid-template-columns: 50px 180px 180px 180px 50px;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+
+.review-text {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.accordion-button {
+  color: #4B3869;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: none;
+  text-align: none;
+}
+
+.accordion-button, .accordion-body {
+  background-color: #c5a5f1;
+}
+
+.accordion-item, .accordion {
+  background-color: #4B3869;
+  border-radius: 5%;
+}
+
+.accordion {
+  width: 80%;
+  margin: 5% auto;
+  margin-bottom: 5%;
+}
+
+.titulo-pagina {
+  margin-bottom: 2.5%;
+  color: #117277;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: none;
+  text-align: center;
+}
+
+col p img {
+  padding: 3%;
+}
+
+.titulo-pagina:hover {
+  transition: all 2s;
+  transform: translateY(-20px);
+  animation: color-change 1s;
+}
+
+@keyframes color-change {
+  15% {
+    color: #664E88;
+  }
+  15% {
+    font-style: italic;
+  }
+  60% {
+    color: #c5a5f1;
+  }
+}
+.productos {
+  color: #117277;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: none;
+  text-align: none;
+}
+
+.precio {
+  color: #664E88;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: none;
+}
+
+.mapas {
+  margin: 0 auto;
+  border: 2px solid #117277;
+}
+
+.sedes {
+  color: #664E88;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: none;
+  text-align: none;
+}
+
+.gallery-img {
+  display: grid;
+  grid-template-rows: 220px 220px;
+  grid-template-columns: 220px 220px 220px 220px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.grid-item {
+  border-radius: 50%;
+}
+.grid-item:hover {
+  transform: scale(1.5);
+  transition: all 1.5s;
+}
+
+footer {
+  margin-top: 2%;
+}
+
+.boton-instagram {
+  margin-bottom: 3%;
+  text-align: center;
+  position: relative;
+  bottom: 5%;
+  top: 5%;
+  color: #4B3869;
+}
+.boton-instagram a:hover {
+  opacity: 0.7;
+}
+.boton-instagram a:active {
+  color: #117277;
+}
+.boton-instagram a:visited {
+  color: #9f1e7e;
+}
+
+/*# sourceMappingURL=style.css.map */

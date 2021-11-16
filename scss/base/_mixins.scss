@@ -1,0 +1,9 @@
+// font style mixin
+@mixin font-style ($font-color, $font-family, $font-size, $font-weight, $font-style, $text-align){
+    color: $font-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    text-align: $text-align;
+}
