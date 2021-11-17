@@ -1,14 +1,8 @@
 // mixin import
 @import "../base/mixins";
 
-.header-section {
-    margin-top: 2%;
-    margin-left: 3%;
-    margin-right: 3%;
-    display: grid;
-    grid-template-rows: 80px;
-    grid-template-columns: 70px 300px;
-    justify-content: center;
+header {
+    margin-top: 3%;
 }
 
 .logo {
@@ -28,7 +22,7 @@
 .header-icon {
     display: flex;
     justify-content: flex-end;
-    margin-right: 2%;
+    margin:0.8em 2em;
     a {
         color: $main-purple;
         text-decoration: none;
