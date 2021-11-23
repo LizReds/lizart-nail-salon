@@ -37,9 +37,16 @@ p {
     @include font-style ($lighter-purple, $poppins, none, 400, none, none);
 }
 
-button {
-    background-color: $lighter-purple;
-    color: $lighter-teal;
+.form-label {
+    @include font-style ($lighter-purple, $poppins, none, 400, none, none);
+}
+
+.form-control {
+    @include font-style($main-teal, $poppins, none, 300, none, none);
+}
+
+.form-select {
+    @include font-style($main-teal, $poppins, 1em, 300, none, none);
 }
 
 // index main 
@@ -53,6 +60,11 @@ button {
 .review-text {
     font-size: 12px;
     font-style: italic;
+}
+
+.btn-primary {
+    background-color: $lighter-teal;
+    color: $main-purple;
 }
 
 // servicios main
@@ -155,9 +167,6 @@ button {
         margin-top: 3%;
     }
 }
-
-
-
 
 .grid-item {
     border-radius: 50%;

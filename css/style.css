@@ -137,9 +137,31 @@ p {
   text-align: none;
 }
 
-button {
-  background-color: #664E88;
-  color: #329499;
+.form-label {
+  color: #664E88;
+  font-family: "Poppins", sans-serif;
+  font-size: none;
+  font-weight: 400;
+  font-style: none;
+  text-align: none;
+}
+
+.form-control {
+  color: #117277;
+  font-family: "Poppins", sans-serif;
+  font-size: none;
+  font-weight: 300;
+  font-style: none;
+  text-align: none;
+}
+
+.form-select {
+  color: #117277;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  font-style: none;
+  text-align: none;
 }
 
 .reviews-container {
@@ -153,6 +175,11 @@ button {
 .review-text {
   font-size: 12px;
   font-style: italic;
+}
+
+.btn-primary {
+  background-color: #329499;
+  color: #4B3869;
 }
 
 .accordion-button {

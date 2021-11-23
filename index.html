@@ -7,7 +7,7 @@
         <!-- Metaetiqueta description -->
         <meta name="description" content="En Lizart Nail Salon tendrás una experiencia única. Consentimos tu piel y tus uñas con productos y servicio al cliente de alta calidad.">
         <!-- Metaetiqueta keywords -->
-        <meta name="keywords" content="manicure, pedicure, manos, pies, uñas, manicuría, diseños uñas, nails, uñas Bogotá, decoración de uñas, manicure semipermanente, manicure tradicional">
+        <meta name="keywords" content="manicure, pedicure, uñas, manicuría, nails, uñas Bogotá">
         <!-- Protocolo open graph -->
         <meta property="og:title" content="Lizart Nail Salon - Colombia">
         <meta property="og:description" content="Visitanos y vive una experiencia única. Tus manos y pies lo agradecerán">
@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-md-6 d-flex justify-content-end">
                         <a href="index.html">
-                            <img src="./src/assets/img/logo.png" alt="Lizart Nail Salon home" width=80 class="logo">
+                            <img src="./src/assets/img/logo.png" alt="Lizart Nail Salon" width=80 class="logo">
                         </a>
                     </div>
                     <div class=" col-md-6 d-flex justify-content-start align-items-end">
@@ -100,20 +100,53 @@
             </section>          
             <!-- Sección 2 -->
             <section>
-                <h1>Agenda tu cita</h1>
-                <!-- Junto a Nombre y Correo electrónico va un campo de texto -->
-                <p>Nombre</p> 
-                <p>Correo Electrónico</p>
-                <!-- Junto a Servicio va un menú desplegable -->
-                <p>Servicio</p>
-                <!-- Junto a Fecha va un calendario para escoger la fecha -->
-                <p>Fecha</p>
-                <!-- Junto a Hora va un menú desplegable -->
-                <p>Hora</p>
+                <h1 class="mt-5 ms-3 me-3">Agenda tu cita</h1>
+                <form class="row g-3 mt-5 ms-3 me-3">
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputService" class="form-label">Servicio</label>
+                        <select id="inputService" class="form-select">
+                        <option selected>Manicure Tradicional</option>
+                        <option>Manicure Semipermanente</option>
+                        <option>Uñas Acrílicas Esculpidas</option>
+                        <option>Pedicure Tradicional</option>
+                        <option>Pedicure Semipermanente</option>
+                        <option>Manicure para Hombre</option>
+                        <option>Pedicure para Hombre</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputBranch" class="form-label">Sede</label>
+                        <select id="inputBranch" class="form-select">
+                        <option selected>Sede Galerías</option>
+                        <option>Sede Kennedy</option>
+                        <option>Sede Santa Fe</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputDate" class="form-label">Fecha</label>
+                        <input type="date" class="form-control" id="inputDate">
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <label for="inputTime" class="form-label">Hora</label>
+                        <input type="time" class="form-control" id="inputTime">
+                    </div>
+                    <div class="col-12 mb-5">
+                        <button type="submit" class="btn btn-primary">Agendar Cita</button>
+                    </div>
+                </form>
             </section>
+
             <!-- Sección 3 -->
             <section>
-                <h2>Clientes felices</h2>
+                <h2 class="ms-3 me-3">Clientes felices</h2>
                 <!-- En esta sección se ven 3 opiniones de clientes con su correspondiente valoración en estrellas -->
                 <div class="reviews-container">
                     <button class="lr-button">
