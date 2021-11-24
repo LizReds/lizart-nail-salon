@@ -107,7 +107,10 @@ p {
         transform: translateY(-20px);
         animation: color-change 1s;
     }
+    transform: translateY (0);
+    transition: transform 2s;
 }
+
 
 @keyframes color-change {
     15% {
@@ -175,4 +178,6 @@ p {
         transform: scale(1.5);
         transition: all 1.5s;
     }
+    transform: scale (0);
+    transition: transform 1.5s;
 }

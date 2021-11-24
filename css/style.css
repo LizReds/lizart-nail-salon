@@ -8,6 +8,10 @@ header {
   margin-top: 3%;
 }
 
+.logo {
+  transform: rotateY 0 scale 0;
+  transition: transform 2s;
+}
 .logo:hover {
   transform: rotateY(360deg) scale(1.2);
   transition: all 2s ease-out;
@@ -221,6 +225,10 @@ p {
   border-radius: 5%;
 }
 
+.titulo-pagina {
+  transform: translateY 0;
+  transition: transform 2s;
+}
 .titulo-pagina:hover {
   transition: all 2s;
   transform: translateY(-20px);
@@ -301,6 +309,8 @@ p {
 
 .grid-item {
   border-radius: 50%;
+  transform: scale 0;
+  transition: transform 1.5s;
 }
 .grid-item:hover {
   transform: scale(1.5);
