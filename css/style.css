@@ -370,6 +370,27 @@ p {
   background-color: #117277;
 }
 
+.work-requirements {
+  font-style: none;
+}
+
+.trabajo-card, .card {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
+.trabajo {
+  animation-duration: none;
+  animation-name: none;
+  transform: translateX 0;
+  transition: transform 2s;
+}
+.trabajo:hover {
+  transition: all 2s;
+  transform: translateX(3%);
+}
+
 footer {
   margin-top: 5%;
 }

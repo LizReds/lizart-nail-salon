@@ -237,3 +237,26 @@ p {
 .btn, .btn-primary {
     background-color: $main-teal;
 }
+
+//trabaja con nosotros main
+
+.work-requirements {
+    font-style: none;
+}
+
+.trabajo-card, .card {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.trabajo {
+    animation-duration: none;
+    animation-name: none;
+    &:hover {
+        transition: all 2s;
+        transform: translateX(3%);
+    }
+    transform: translateX (0);
+    transition: transform 2s;
+}
