@@ -21,6 +21,11 @@ header {
     @include font-style ($main-purple, $poppins, 2rem, 500, none, center);
 }
 
+.animate__flipInX {
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+}
+
 .header-icon {
     display: flex;
     justify-content: flex-end;

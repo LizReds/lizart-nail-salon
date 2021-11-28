@@ -29,6 +29,11 @@ header {
   text-align: center;
 }
 
+.animate__flipInX {
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+}
+
 .header-icon {
   display: flex;
   justify-content: flex-end;
@@ -168,22 +173,36 @@ p {
   text-align: none;
 }
 
-.reviews-container {
-  display: grid;
-  grid-template-rows: 230px;
-  grid-template-columns: 50px 180px 180px 180px 50px;
-  justify-content: space-evenly;
-  margin-top: 3%;
+.bi-person-square, .nombre-cliente {
+  color: #117277;
 }
 
-.review-text {
-  font-size: 12px;
+.bi-star-fill {
+  color: #e0e11e;
+}
+
+.card-text {
+  font-size: 1.1em;
   font-style: italic;
 }
 
-.btn-primary {
-  background-color: #329499;
-  color: #4B3869;
+.card {
+  margin: 5%;
+  background-color: transparent;
+  border: transparent;
+}
+
+.card-body {
+  background: #3ca0a2;
+  background: linear-gradient(0deg, #3ca0a2 0%, rgba(140, 94, 171, 0.8771883754) 100%);
+  border-radius: 2%;
+  transform: translateY 0;
+  transition: transform 2s;
+}
+.card-body:hover {
+  transition: all 2s;
+  transform: translateY(-25px);
+  animation: color-change 1s;
 }
 
 .accordion-button {
@@ -315,6 +334,40 @@ p {
 .grid-item:hover {
   transform: scale(1.5);
   transition: all 1.5s;
+}
+
+.col-6 {
+  margin-top: 3%;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+}
+
+.nosotros-text, .card-img-top {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 250%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.contacto-subtitle {
+  text-align: center;
+}
+
+.form-label {
+  justify-content: start;
+}
+
+.btn, .btn-primary {
+  background-color: #117277;
 }
 
 footer {
