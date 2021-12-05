@@ -18,7 +18,7 @@ main {
         p .precio{
             @media screen and (max-width:480px){
                 color: $visited-color;
-                font-size: 10px;
+                font-size: 12px;
             }
             @media screen and (min-width:481px) and (max-width:960px){
                 color: rgb(8, 153, 158);
@@ -71,14 +71,14 @@ p {
 }
 
 .card-body {
-    background: rgb(60,160,162);
-    background: linear-gradient(0deg, rgba(60,160,162,1) 0%, rgba(140,94,171,0.87718837535014) 100%);
-    border-radius: 2%;
     &:hover {
         transition: all 2s;
         transform: translateY(-25px);
         animation: color-change 1s;
     }
+    background: rgb(60,160,162);
+    background: linear-gradient(0deg, rgba(60,160,162,1) 0%, rgba(140,94,171,0.87718837535014) 100%);
+    border-radius: 2%;
     transform: translateY (0);
     transition: transform 2s;
 }
@@ -116,6 +116,12 @@ p {
 .img-fluid {
     margin: 7%;
     border-radius: 5%;
+    opacity: 0.8;
+    transition: 0.3s;
+    box-shadow: 7px 5px 5px $lighter-purple;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .titulo-pagina {
@@ -155,12 +161,20 @@ p {
     margin: 0 auto;
     border: 2px solid $main-teal;
     @extend%flex-center;
+
+    @media screen and (max-width:480px){
+        width: 75%;
+    }
+    @media screen and (min-width:481px) and (max-width:960px){
+        width: 50%;
+    }
 }
 
 .sedes {
     @include font-style ($lighter-purple, $poppins, 1.5rem, 300, none, none);
     @extend%flex-center;
 }
+
 
 // galeria main 
 

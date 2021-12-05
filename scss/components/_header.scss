@@ -14,8 +14,36 @@ header {
         -moz-transform: rotateY(360deg) scale(1.2);
     }
     transform: rotateY (0) scale (0);
-    transition: transform 2s;
+    transition: transform 2s; 
 }
+
+.logo-container {
+    display: flex;
+    justify-content: end;
+    @media screen and (max-width:480px){
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (min-width:481px) and (max-width:960px){
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.nombre-empresa-container {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    @media screen and (max-width:480px){
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (min-width:481px) and (max-width:960px){
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 .nombre-empresa {
     @include font-style ($main-purple, $poppins, 2rem, 500, none, center);

@@ -20,6 +20,41 @@ header {
   -moz-transform: rotateY(360deg) scale(1.2);
 }
 
+.logo-container {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 480px) {
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nombre-empresa-container {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+@media screen and (max-width: 480px) {
+  .nombre-empresa-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .nombre-empresa-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .nombre-empresa {
   color: #4B3869;
   font-family: "Poppins", sans-serif;
@@ -117,7 +152,7 @@ main {
 @media screen and (max-width: 480px) {
   main section p .precio {
     color: #9f1e7e;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 960px) {
@@ -242,6 +277,12 @@ p {
 .img-fluid {
   margin: 7%;
   border-radius: 5%;
+  opacity: 0.8;
+  transition: 0.3s;
+  box-shadow: 7px 5px 5px #664E88;
+}
+.img-fluid:hover {
+  opacity: 1;
 }
 
 .titulo-pagina {
@@ -286,6 +327,16 @@ p {
 .mapas {
   margin: 0 auto;
   border: 2px solid #117277;
+}
+@media screen and (max-width: 480px) {
+  .mapas {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .mapas {
+    width: 50%;
+  }
 }
 
 .sedes {
